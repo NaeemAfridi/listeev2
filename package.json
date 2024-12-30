@@ -24,14 +24,14 @@
     "web-vitals": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node api.js && react-scripts start",
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
     "prettier:fix": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
     "prettier:check": "prettier \"src/**/*.{ts,tsx,js,jsx}\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "npm start"
+    "dev": "node api.js && npm start"
   },
   "eslintConfig": {
     "extends": [
